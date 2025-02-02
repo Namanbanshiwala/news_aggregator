@@ -1,0 +1,55 @@
+#body{
+    background-color: rgb(122, 135, 115);
+}
+
+
+.nvbar{
+    background-color: rgb(165 198 131);
+    border-radius: 9px;
+}
+.nvbar ul{
+    overflow: auto;
+}
+.nvbar li{
+    float: left;
+    list-style: none;
+    margin: 13px 20px;
+}
+.nvbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    /* text-decoration: is use or remove line in the words  */
+}
+.nvbar li a:hover{
+    padding: 3px 3px;
+    color: rgb(75, 123, 22);
+}
+.search{
+    float: right;
+    color: black;
+    padding: 12px 75px;
+}
+.nvbar input{
+    border: 2px solid rgb(10, 16, 2);
+    border-radius: 3px;
+    padding: 3px 17px;
+}
+.container{
+    width: 100%; 
+    height: 550px;
+    border: 3px solid grey;
+    display: flex;
+    /* flex-direction: column;
+    flex-direction: row-reverse;  this is 
+    flex-direction: column-reverse;  */
+    flex-wrap: wrap;
+} 
+.item{
+    width: 150px;
+    height: 100px;
+    border: 2px solid green;
+    background-color: tomato;
+    margin: 4px;
+    padding: 15px;
+    border-radius: 5px;
+}

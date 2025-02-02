@@ -1,0 +1,23 @@
+{% extends "baisic.html" %}
+{% block title %} hello buddy {% endblock %}
+{% block css %} {% endblock %}
+{% block body %} 
+<div class="container" style="padding-top: 22px;padding-inline: inherit;">
+    {% for article in articles %}
+
+    <div class="container card" style="width: 25rem; margin-bottom: 20px; ">
+        <img src="{{ article.urlToImage }}" class="card-img-top" alt="...">
+        <div class="card-body" style="margin-bottom: -13px;">
+            <p class="card-text">{{ article.author }}</p>
+            <h5 class="card-title">{{ article.title }}</h5>
+            <p class="card-title">{{ article.source.name }}</p>
+            <p class="card-text">{{ article.description }}</p>
+            <hr>
+            <small>date: {{ article.publishedAt }}</small>
+            <a href="{{ article.url }}" target="_blank" class="btn btn-success m-1">See News</a>
+        </div>
+    </div>
+
+    {% endfor %}
+</div>
+{% endblock %}
